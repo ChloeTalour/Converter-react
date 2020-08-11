@@ -1,0 +1,29 @@
+@use 'src/styles/vars';
+// @use '../../styles/vars';
+
+.header {
+  background-color: vars.$color-primary;
+  color: vars.$color-light;
+  text-align: center;
+  padding: vars.$gutter * 2;
+  &__title {
+    font-size: 2em;
+    margin-bottom: vars.$gutter / 2;
+    font-weight: 700;
+  }
+  &__input {
+    border: none;
+    color: vars.$color-primary;
+    font-size: 1.2em;
+    padding: vars.$gutter /2 ;
+    width: 30%;
+    margin-right: vars.$gutter;
+    text-align: center;
+    &::placeholder {
+      color: vars.$color-alt;
+    }
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none; 
+    }
+  }
+}
